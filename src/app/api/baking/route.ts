@@ -18,6 +18,7 @@ export async function POST(req: Request) {
     model: openaiInstance.chat("gpt-4"),
     schema: bakingSchema,
     prompt: `${bakingPrompt} ${context}`,
+    maxTokens: 6000,
   });
 
   return result.toTextStreamResponse();
