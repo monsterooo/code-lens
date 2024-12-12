@@ -4,7 +4,7 @@ import { bakingSchema } from "./schema";
 import { env } from "@/env";
 import { bakingPrompt } from "@/lib/prompt";
 
-export const maxDuration = 30;
+export const maxDuration = 60;
 
 const openaiInstance = createOpenAI({
   baseURL: env.OPENAI_BASE_URL,
